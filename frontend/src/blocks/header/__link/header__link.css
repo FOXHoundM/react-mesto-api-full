@@ -1,0 +1,13 @@
+.header__link {
+	color: white;
+	margin-right: 24px;
+	max-height: 22px;
+	transition: 0.5s ease-in-out;
+	text-decoration: none;
+	margin-top: 0;
+	background: unset;
+}
+
+.header__link:hover:last-child {
+	opacity: 0.6;
+}
