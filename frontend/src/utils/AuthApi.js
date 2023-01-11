@@ -4,6 +4,7 @@ const request = (url, options) => {
 	return fetch(url, options).then(getRequestData())
 }
 
+
 const getRequestData = () => {
 	return (res) => {
 		if (res.ok) {
