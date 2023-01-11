@@ -1,8 +1,6 @@
 const jwt = require('jsonwebtoken');
 const { secretKey } = require('../helpers/token');
 
-// const UnauthorizedError = require('../errors/unauthorizedError');
-
 const handleAuthError = (res) => {
   res
     .status(401)
