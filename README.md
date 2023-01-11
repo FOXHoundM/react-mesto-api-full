@@ -9,4 +9,4 @@ IP: 158.160.37.172
 Frontend https://foxhound.nomoredomains.club
 Backend https://api.foxhound.nomoredomains.club
 
-Repository https://FOXHoundM.github.io/react-mesto-api-full/
+Repository https://github.com/FOXHoundM/react-mesto-api-full
