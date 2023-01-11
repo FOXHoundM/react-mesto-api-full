@@ -26,16 +26,16 @@ const { PORT = 3000 } = process.env;
 const app = express();
 
 const allowedCors = [
-  'http://localhost:3000',
-  'http://foxhound.nomoredomains.club',
   'https://foxhound.nomoredomains.club',
+  'http://foxhound.nomoredomains.club',
+  'http://localhost:3000',
 ];
 
 const corsOptions = {
   origin: allowedCors,
   optionSuccessStatus: 200,
-  // methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'HEAD', 'OPTIONS'],
-  // allowedHeaders: ['Content-Type', 'Origin', 'X-Requested-With', 'Accept', 'x-client-key', 'x-client-token', 'x-client-secret', 'Authorization'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'HEAD', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Origin', 'X-Requested-With', 'Accept', 'x-client-key', 'x-client-token', 'x-client-secret', 'Authorization'],
   credentials: true,
 };
 

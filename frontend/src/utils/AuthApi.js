@@ -16,6 +16,7 @@ const getRequestData = () => {
 export const register = ({email, password}) => {
 	return request(`${BASE_URL}/signup`, {
 		method: 'POST',
+		credentials: 'include',
 		headers: {
 			"Content-Type": "application/json"
 		},
