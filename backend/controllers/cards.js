@@ -83,7 +83,7 @@ module.exports.putLikeCard = (req, res) => {
           .json({ message: 'Неправильные данные введены' });
       } else {
         res.status(500)
-          .json({ message: 'Произошла ошибка загрузки данных' });
+          .json({ message: 'На сервере произошла ошибка' });
       }
     });
 };
@@ -114,7 +114,7 @@ module.exports.putDislikeCard = (req, res) => {
           .json({ message: 'Неправильные данные введены' });
       } else {
         res.status(500)
-          .json({ message: 'Произошла ошибка загрузки данных' });
+          .json({ message: 'На сервере произошла ошибка' });
       }
     });
 };

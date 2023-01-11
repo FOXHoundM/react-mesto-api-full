@@ -153,7 +153,7 @@ module.exports.updateUser = (req, res) => {
           .json({ message: 'Неправильные данные введены' });
       } else {
         res.status(500)
-          .json({ message: 'Произошла ошибка загрузки данных' });
+          .json({ message: 'На сервере произошла ошибка' });
       }
     });
 };
@@ -181,7 +181,7 @@ module.exports.changeAvatar = (req, res) => {
           .json({ message: 'Неправильные данные введены' });
       } else {
         res.status(500)
-          .json({ message: 'Произошла ошибка загрузки данных' });
+          .json({ message: 'На сервере произошла ошибка' });
       }
     });
 };
